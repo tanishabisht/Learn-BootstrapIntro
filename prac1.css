@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(255, 187, 0);
+}
+
+/*Responsive-breakpoints*/
+@media screen and (min-width: 567px){
+    body{
+        background-color: rgb(255, 145, 0);
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: rgb(255, 181, 85);
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-color: rgb(253, 212, 159);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: rgb(255, 238, 215);
+    }
+}
+
+.col{
+    min-height: 40vh;
+}
+
+.flex{
+    min-height: 100vh;
+    background-color: rgb(255, 193, 78);
+}
+
+*{
+    font-family: "OCR A Std", monospace;
+}

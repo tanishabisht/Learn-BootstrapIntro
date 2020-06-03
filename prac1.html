@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="prac1.css" rel="stylesheet" type="text/css" >
+    </head>
+
+    <body>
+        <div class="container bg-danger">This is container.</div>
+        <div class="container-fluid bg-warning">This is container-fluid.</div>        
+        <br/>
+        <br/>
+        <br/>
+
+
+
+
+        <!-- Using Section for containers -->
+        <h4 class="text-center">Using Section for containers</h4>
+        <section id="skills" class="bg-success p-5 text-light">
+            <div class="container">
+                <h1>I am the skills Section with container.</h1>
+            </div>
+        </section>
+
+        <section id="about" class="bg-info p-5 text-light">
+            <div class="container-fluid">
+                <h1>I am the about Section with container-fluid.</h1>
+            </div>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+
+
+
+
+        <!-- grid -->
+        <h4 class="text-center">Playing with Grids</h4>
+        
+        <h5 class="text-center">One Coloumn</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col bg-danger text-light"> I am single coloumn.</div>
+            </div>
+        </div>
+        <br/>
+
+        <h5 class="text-center">Four Coloumns</h5>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col bg-info text-light"> I am single coloumn.</div>
+                <div class="col bg-warning"> I am single coloumn.</div>
+                <div class="col bg-dark text-light"> I am single coloumn.</div>
+                <div class="col bg-light"> I am single coloumn.</div>
+            </div>
+        </div>
+        <br/>
+        
+        <h5 class="text-center">Four Coloumns and responsive breakpoints</h5>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 bg-info text-light"> I am single coloumn.</div>
+                <div class="col-sm-6 bg-warning"> I am single coloumn.</div>
+                <div class="col-sm-6 bg-dark text-light"> I am single coloumn.</div>
+                <div class="col-sm-6 bg-light"> I am single coloumn.</div>
+            </div>
+        </div>
+        <br/>
+        
+        <h5 class="text-center">Four Coloumns and responsive breakpoints</h5>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col bg-info text-light"> I am single coloumn.</div>
+                <div class="col bg-warning"> I am single coloumn.</div>
+                <div class="col bg-dark text-light"> I am single coloumn.</div>
+                <div class="col bg-light"> I am single coloumn.
+                    <div class="row">
+                        <div class="col-6 bg-danger">P1</div>
+                        <div class="col-6 bg-warning">P2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+
+
+
+        <!-- margin and padding: uses rem values
+                1 rem = 16 px
+                margin-left: ml
+                mx-5; left and right margin
+                my-5; top and bottom margin
+        -->
+        <h4 class="text-center">Playing with Grids</h4>
+        <h5 class="text-center">Margin</h5>
+        <div class="container">
+            <div class="bg-primary m-5">this is div</div>   <!--margin-left: ml-->
+            <div class="bg-secondary m-4">this is div</div>
+            <div class="bg-success m-3">this is div</div>
+            <div class="bg-danger m-2">this is div</div>
+            <div class="bg-warning m-1">this is div</div>
+            <div class="bg-info m-0">this is div</div>
+        </div>
+        <br/>
+
+        <h5 class="text-center">Padding</h5>
+        <div class="container">
+            <div class="bg-primary p-5">this is div</div>
+            <div class="bg-secondary p-4">this is div</div>
+            <div class="bg-success p-3">this is div</div>
+            <div class="bg-danger p-2">this is div</div>
+            <div class="bg-warning p-1">this is div</div>
+            <div class="bg-info p-0">this is div</div>
+        </div>
+        <br/>
+
+        <h5 class="text-center">Width</h5>
+        <div class="container">
+            <div class="bg-primary w-25 mx-auto">this is div</div>
+            <div class="bg-secondary w-50 mx-auto">this is div</div>
+            <div class="bg-success w-75 mx-auto">this is div</div>
+            <div class="bg-danger w-100 mx-auto">this is div</div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+
+
+        <!-- flexbox using bootstrap
+                d-flex class (only direct children)
+                justify-content-start|end|between|around|center (horizontal)
+                align-items-start|end|between|around|center (vertical) 
+                rows are by default parent flexbox container               
+        -->
+        <h4 class="text-center">Flexbox using Bootstrap</h4>
+        <h5 class="text-center">Manual FlexBox container</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col bg-light d-flex justify-content-around align-items-center">
+                    <p class="bg-danger align-self-start">hello world</p>
+                    <p class="bg-warning align-self-end">hello world</p>
+                    <p class="bg-success ">hello world</p>
+                    <p class="bg-dark align-self-start">hello world</p>
+                </div>
+            </div>
+        </div>
+        <br/> 
+
+        <h5 class="text-center">Row as default FlexBox container</h5>
+        <div class="container">
+            <div class="row flex justify-content-center align-items-center">
+                <div class="col-9">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, animi sit! Blanditiis suscipit, accusantium fugit esse nulla eos rem 
+                    nisi atque quas, odio adipisci? Ex reprehenderit ullam tenetur recusandae mollitia? Accusantium ullam odit nostrum id tempore repellendus                     
+                    iusto corporis magnam dolorem omnis? Quam pariatur dignissimos nulla, omnis velit neque molestias veniam! At natus repellendus, doloremque 
+                    expedita voluptate dolore excepturi iste in, odit debitis nemo est tempora iusto ipsa dolorem quisquam reprehenderit. Hic quisquam cupiditate 
+                    beatae incidunt inventore suscipit eligendi in necessitatibus.</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+
+    </body>
+</html>
