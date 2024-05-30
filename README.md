@@ -1,31 +1,13 @@
-# Practicing bootstrap
+# Learn - Bootstrap Layout
 
-The attached html and css files are how I got started with bootstrap. I followed a youtube tutorial by [Coding Addict](https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA). Their tutorial is awesome if some one is just new to bootstrap. You can follow [this link](https://www.youtube.com/watch?v=Uhy3gtZoeOM) for their youtube tutorial.
+This README document explains how to get started with Bootstrap, a popular CSS framework that aids in creating responsive and mobile-first websites. It follows a tutorial by [Coding Addict on YouTube](https://www.youtube.com/watch?v=Uhy3gtZoeOM), which is particularly helpful for beginners.
 
-Following below is my some documentation on the same:
+**Bootstrap** includes pre-designed CSS classes and optional JavaScript plugins that can be used to style and interact with various elements like forms, buttons, navigation bars, and other interface components.
 
-- [What is bootstap](https://github.com/tanishabisht/Bootstrap-Practice#What-is-bootstap)
-- [How do we get or download bootstrap!!!](https://github.com/tanishabisht/Bootstrap-Practice#How-do-we-get-or-download-bootstrap!!!)
-- [Lets Bootstrap](https://github.com/tanishabisht/Bootstrap-Practice#Lets-Bootstrap)
-  - [Margin and padding](https://github.com/tanishabisht/Bootstrap-Practice#Margin-and-padding)
-  - [Flexbox using bootstrap](https://github.com/tanishabisht/Bootstrap-Practice#Flexbox-using-bootstrap)
+## How to Obtain Bootstrap
+To use Bootstrap, you can simply include its CSS and JavaScript files in your HTML document by linking to them in the `<head>` section of your HTML file.
 
-
-## What is bootstap 
-
-If we seach on wikipedia we get this:
-
-> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
-
-Well put simply for beginners it could be called a library of css classes and javascript pluggins.
-
-
-
-## How do we get or download bootstrap!!!
-
-Not much of a great deal for starters we could just paste these in the head tag of our html file.
-
-```
+```html
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!-- jQuery library -->
@@ -35,29 +17,17 @@ Not much of a great deal for starters we could just paste these in the head tag 
 ```
 
 
-## Lets Bootstrap 
-
-Ok so basically bootstrap uses this grid system. Every row could be said to be divided into 12 coloumns. 
-
-1. container
-2. container-fluid
-3. row
-4. col
+## Grid in Bootstrap
+Bootstrap’s layout is based on a grid system, where each row is divided into 12 columns. This makes it easier to place and align content in a structured way.
+- `container` and `container-fluid` for setting the maximum width of the content.
+- `row` to define a horizontal group of columns.
+- `col` to specify column sizes inside rows.
 
 
-
-### Margin and padding
-
-1. uses rem values (1 rem = 16 px)
-2. margin-left: ml
-3. mx-5; left and right margin
-4. my-5; top and bottom margin
+## Flexbox in Bootstrap
+- **Flex Container:** Use `d-flex` to create a flex container. `row` is by default parent flexbox container 
+- **Alignment:** Control the alignment of flex items using classes like `justify-content-start|end|between|around|center (horizontal)`, `align-items-start|end|between|around|center (vertical)`, etc., to set the alignment along the horizontal or vertical axis.
 
 
-
-### Flexbox using bootstrap
-
-1. d-flex class (only direct children)
-2. justify-content-start|end|between|around|center (horizontal)
-3. align-items-start|end|between|around|center (vertical) 
-4. rows are by default parent flexbox container 
+## Margin and Padding
+Bootstrap uses 'rem' units for margins and paddings (where 1 rem equals 16 pixels). For margins, you can use classes like `ml` for margin-left, `mx-5` for horizontal margins, and `my-5` for vertical margins.
